@@ -173,16 +173,16 @@ class BasicBlock(nn.Layer):
         return y
 
 
-class ResNet(nn.Layer):
+class ResNet(nn.Layer): # Resnet分类网络 2015 He-Kaiming, Ren-Shaoqing, Sun-Jian 50 by default
     def __init__(self, in_channels=3, layers=50, **kwargs):
         super(ResNet, self).__init__()
 
         self.layers = layers
-        supported_layers = [18, 34, 50, 101, 152, 200]
+        supported_layers = [18, 34, 50, 101, 152, 200] # 层与深度
         assert layers in supported_layers, \
             "supported layers are {} but input layer is {}".format(
                 supported_layers, layers)
-
+        # 分别对不同层，探索其深度
         if layers == 18:
             depth = [2, 2, 2, 2]
         elif layers == 34 or layers == 50:
@@ -202,7 +202,7 @@ class ResNet(nn.Layer):
             out_channels=32,
             kernel_size=3,
             stride=1,
-            act='relu',
+            act='relu', # 激活函数
             name="conv1_1")
         self.conv1_2 = ConvBNLayer(
             in_channels=32,
@@ -275,12 +275,12 @@ class ResNet(nn.Layer):
                 self.out_channels = num_filters[block]
         self.out_pool = nn.MaxPool2D(kernel_size=2, stride=2, padding=0)
 
-    def forward(self, inputs):
+    def forward(self, inputs): # 前向Sequence
         y = self.conv1_1(inputs)
         y = self.conv1_2(y)
         y = self.conv1_3(y)
-        y = self.pool2d_max(y)
-        for block in self.block_list:
+        y = self.pool2d_max(y) # 池化层
+        for block in self.block_list: # 块的选择
             y = block(y)
         y = self.out_pool(y)
         return y

@@ -11,17 +11,17 @@ Baidu PaddleOCR aims to create multilingual, leading and practical OCR tools tha
     <img src="./doc/ppocr_framework.png" width="800">
 </div>
 
-PaddleOCR is a practical ultra-lightweight OCR system. It is mainly composed of 3 parts: the DB Text Detection, the Detection Frame Correction and the CRNN Text Recognition. The system adopts 19 effective strategies from 8 aspects including the Backbone Network Selection and Adjustment, Prediction Head Design, Data Augmentation, Learning Rate Transformation Strategy, Regularization Parameter Selection, Pre-training Model Use, Automatic Model Tailoring and Quantization to optimize and slim down each module. The final results are an ultra-lightweight Chinese & English OCR model with an overall size being 3.5M and an English digital OCR model being 2.8M. For more details, please refer to our [technical report](https://arxiv.org/abs/2009.09941). Besides, the Implementation of FPGM Pruner and PACT Quantization is based on [PaddleSlim](https://github.com/PaddlePaddle/PaddleSlim).
+PaddleOCR is a practical ultra-lightweight OCR system. It is mainly composed of 3 parts: the DB Text Detection, the Detection Frame Correction and the CRNN Text Recognition. The system adopts 19 effective strategies from 8 aspects including the Backbone Network Selection and Adjustment, Prediction Head Design, Data Augmentation, Learning Rate Transformation Strategy, Regularization Parameter Selection, Pre-training Model Use, Automatic Model Tailoring and Quantization to optimize and slim down each module. The final results are an ultra-lightweight Chinese & English OCR model with an overall size being 3.5M and an English digital OCR model being 2.8M. For more details, please refer to our [Technical Report](https://arxiv.org/abs/2009.09941). Besides, the Implementation of FPGM Pruner and PACT Quantization is based on [PaddleSlim](https://github.com/PaddlePaddle/PaddleSlim).
 
 <a name="News"></a>
 ## News 新闻
 Note: PaddleOCR now supports both dynamic graph and static graph programming paradigm
-- Dynamic graph: dygraph branch (default), **supported by paddle 2.0.0 ([installation](./doc/doc_en/installation_en.md))**
+- Dynamic graph: dygraph branch (default), **supported by paddle 2.0.0 ([Installation](./doc/doc_en/installation_en.md))**
 - Static graph: develop branch
 
 - 2021.02.08 Release PaddleOCRv2.0(branch release/2.0) and set as default branch. Check release note here: https://github.com/PaddlePaddle/PaddleOCR/releases/tag/v2.0.0 .
 
-- 2021.01.21 ADD more than 25+ multilingual recognition models [model list](./doc/doc_en/models_list_en.md) including：English, Chinese, German, French, Japanese，Spanish，Portuguese, Russia, Arabic et. al. Models for many MORE languages will be added soon. [Develop Plan](https://github.com/PaddlePaddle/PaddleOCR/issues/1048).
+- 2021.01.21 ADD more than 25+ multilingual recognition models [Model List](./doc/doc_en/models_list_en.md) including：English, Chinese, German, French, Japanese，Spanish，Portuguese, Russia, Arabic et. al. Models for many MORE languages will be added soon. [Develop Plan](https://github.com/PaddlePaddle/PaddleOCR/issues/1048).
 
 - 2020.12.15 Update Data synthesis tool, i.e., [Style-Text](./StyleText/README.md), easy to synthesize a large number of images which are similar to the target scene image.
 
@@ -78,9 +78,10 @@ The above image is the visualizations of the general ppocr_server model. For mor
 - [Installation](./doc/doc_en/installation_en.md)
 - [Quick Start](./doc/doc_en/quickstart_en.md)
 - [Code Structure](./doc/doc_en/tree_en.md)
-- Algorithm Intro
-    - [Text Detection Algorithm](./doc/doc_en/algorithm_overview_en.md)
-    - [Text Recognition Algorithm](./doc/doc_en/algorithm_overview_en.md)
+- Algorithm
+    - [Text Detection](./doc/doc_en/algorithm_overview_en.md)
+    - [Text Recognition](./doc/doc_en/algorithm_overview_en.md)
+    - [How to add NEW alg](./doc/doc_en/add_new_algorithm_en.md)
 - Model Training & Evaluation
     - [Text Detection](./doc/doc_en/detection_en.md)
     - [Text Recognition](./doc/doc_en/recognition_en.md)

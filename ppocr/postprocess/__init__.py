@@ -17,6 +17,7 @@ from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
 
+from my_postprocess import MyPostprocess
 import copy
 
 __all__ = ['build_post_process']

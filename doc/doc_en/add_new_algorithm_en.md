@@ -1,5 +1,11 @@
 # Add new algorithm
 
+## TODOs
+
+* 2021-02-22 ADD end-to-end steps for adding a new alg.
+
+## Intro
+
 PaddleOCR decomposes an algorithm into the following parts, and modularizes each part to make it more convenient to develop new algorithms.
 
 * Data loading and processing
