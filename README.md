@@ -1,3 +1,5 @@
+# PaddleOCR
+
 English | [简体中文](README_ch.md)
 
 <a name="Intro"></a>
