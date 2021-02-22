@@ -1,10 +1,11 @@
+# PaddleOCR
 English | [简体中文](README_ch.md)
 
 <a name="Intro"></a>
 ## Intro 简介
 Baidu PaddleOCR aims to create multilingual, leading and practical OCR tools that help users train STOA OCR models and apply them into practice.
 
-<a name="PP-OCR-Pipeline"></a>
+<a name="SystemArchitecture"></a>
 ## System Architecture 系统架构
 <div align="center">
     <img src="./doc/ppocr_framework.png" width="800">
@@ -73,26 +74,26 @@ The above image is the visualizations of the general ppocr_server model. For mor
 
 <a name="Tutorials"></a>
 ## Tutorials 入门教程
+- [System Architecture](#SystemArchitecture)
 - [Installation](./doc/doc_en/installation_en.md)
 - [Quick Start](./doc/doc_en/quickstart_en.md)
 - [Code Structure](./doc/doc_en/tree_en.md)
-- Algorithm Introduction
+- Algorithm Intro
     - [Text Detection Algorithm](./doc/doc_en/algorithm_overview_en.md)
     - [Text Recognition Algorithm](./doc/doc_en/algorithm_overview_en.md)
-    - [PP-OCR Pipeline](#PP-OCR-Pipeline)
-- Model Training/Evaluation
+- Model Training & Evaluation
     - [Text Detection](./doc/doc_en/detection_en.md)
     - [Text Recognition](./doc/doc_en/recognition_en.md)
     - [Direction Classification](./doc/doc_en/angle_class_en.md)
     - [Yml Configuration](./doc/doc_en/config_en.md)
-- Inference and Deployment
+- Inference & Deployment
     - [Quick Inference Based on PIP](./doc/doc_en/whl_en.md)
     - [Python Inference](./doc/doc_en/inference_en.md)
     - [C++ Inference](./deploy/cpp_infer/readme_en.md)
     - [Serving](./deploy/hubserving/readme_en.md)
     - [Mobile](https://github.com/PaddlePaddle/PaddleOCR/blob/develop/deploy/lite/readme_en.md)
     - [Benchmark](./doc/doc_en/benchmark_en.md)  
-- Data Annotation and Synthesis
+- Data Annotation & Synthesis
     - [Semi-automatic Annotation Tool: PPOCRLabel](./PPOCRLabel/README.md)
     - [Data Synthesis Tool: Style-Text](./StyleText/README.md)
     - [Other Data Annotation Tools](./doc/doc_en/data_annotation_en.md)
@@ -101,13 +102,13 @@ The above image is the visualizations of the general ppocr_server model. For mor
     - [General OCR Datasets(Chinese/English)](./doc/doc_en/datasets_en.md)
     - [HandWritten_OCR_Datasets(Chinese)](./doc/doc_en/handwritten_datasets_en.md)
     - [Various OCR Datasets(multilingual)](./doc/doc_en/vertical_and_multilingual_datasets_en.md)
-- [Visualization](#Visualization)
-- [New language requests](#language_requests)
+- [Visualization OCR Result](#Visualization)
+- [New Language Support](#NewLanguageSupport)
 - [FAQ](./doc/doc_en/FAQ_en.md)
 - [Community](#Community)
-- [References](./doc/doc_en/reference_en.md)
 - [License](#LICENSE)
 - [Contribution](#CONTRIBUTION)
+- [References](./doc/doc_en/reference_en.md)
 
 <a name="OnlineDemo"></a>
 ## Online Demo 核心能力演示
@@ -133,7 +134,7 @@ Also, you can scan the QR code below to install the App (Note: ONLY available on
 
 To download other models (including multiple languages), please refer to [PP-OCR v2.0 model list](./doc/doc_en/models_list_en.md).
 
-<a name="language_requests"></a>
+<a name="NewLanguageSupport"></a>
 ## New Language Support 新语言支持
 
 If you want to request a new language support, a PR with 2 following files are needed:
